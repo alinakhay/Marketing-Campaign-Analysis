@@ -875,18 +875,7 @@ n1 = n1.map(sns.distplot, 'value')
 n1
 ```
 
-
-
-
-    <seaborn.axisgrid.FacetGrid at 0x7fdf80efd2b0>
-
-
-
-
-    
-![png](Marketing_Campaign_Analysis_files/Marketing_Campaign_Analysis_16_1.png)
-    
-
+![Alt Text](input/img_1.png)
 
 Plotting the distribution is a complementary work to do when analyzing the statistical summary. It provides a visual help to better appropriate the dataset
 
@@ -920,7 +909,7 @@ fig.update_yaxes(showline=True, linewidth=2, linecolor='grey')
 
 fig.show()
 ```
-
+![Alt Text](input/img_2.png)
 
 Outliers analysis must be done with care. From above we can see that several variables seem to have outliers :
 >- __*Age*__: 3 customers older than the Upper Fence set at 74 years old. We will not remove them
@@ -933,8 +922,6 @@ Outliers analysis must be done with care. From above we can see that several var
 dataset = dataset.drop(dataset[dataset['Income']> 600000].index).reset_index(drop=True)
 dataset
 ```
-
-
 
 
 <div>
@@ -1188,6 +1175,7 @@ fig = px.sunburst(df, path=['Marital_Situation','Education'],color_discrete_sequ
 fig.show()
 ```
 
+![Alt Text](input/img_3.png)
 
 >- The distribution of diploma category owned seems to be __identical__ for the two population _In couple_ and _Alone_ 
 
@@ -1207,7 +1195,7 @@ df = dataset[['Income_bins','Has_child']]
 fig = px.sunburst(df, path=['Has_child','Income_bins'],color_discrete_sequence=px.colors.diverging.Portland)
 fig.show()
 ```
-
+![Alt Text](input/img_6.png)
 
 >- People with __high income__ are largely representing the population who has __no child__
 >- People having __at least 1 child__ are mainly represented by people with __low income__  
