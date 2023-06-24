@@ -30,16 +30,7 @@ import os
 ```
 
 
-```python
-Image("input/cover.jpg")
-```
-
-
-
-
-    
-![jpeg](Marketing_Campaign_Analysis_files/Marketing_Campaign_Analysis_2_0.jpg)
-    
+![Alt Text](input/cover.jpg)   
 
 
 
