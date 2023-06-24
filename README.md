@@ -1119,7 +1119,7 @@ We dont have any missing value anymore
 fig = px.histogram(dataset, x="Income",color="Education", nbins=10,histnorm='percent',barnorm='fraction',barmode='relative')
 fig.show()
 ```
-
+![Alt Text](input/img_3.png)
 
 >- __Lower income__ are mainly represented by __Basic diploma owners__ and __2n Cycle owners__
     - Income between 0 and 20k are represented at __68%__ by Basic diploma owners and at __14%__ by 2n Cycle diploma owners  
@@ -1137,7 +1137,7 @@ category_orders={"Education":["Basic","2n Cycle","Graduation","Master","PhD"]}
 fig = px.histogram(df, x="Education",y="Income",  histfunc='avg',category_orders=category_orders)
 fig.show()
 ```
-
+![Alt Text](input/img_4.png)
 
 >- Average income is the highest for __PhD owners__ with __56161 dollars__  
 >- Average income is the lowest for __Basic diploma owners__ with __20306 dollars__  
@@ -1157,7 +1157,7 @@ fig.add_trace(go.Scatter(name='line of best fit', x=dataset['Spending'], y=df['b
 fig.update_traces(hovertemplate='Spending: %{x} <br>Income: %{y}')
 fig.show()
 ```
-
+![Alt Text](input/img_5.png)
 
 
 >- Spending seems to be __positively correlated__ with the income level
@@ -1175,7 +1175,7 @@ fig = px.sunburst(df, path=['Marital_Situation','Education'],color_discrete_sequ
 fig.show()
 ```
 
-![Alt Text](input/img_3.png)
+![Alt Text](input/img_7.png)
 
 >- The distribution of diploma category owned seems to be __identical__ for the two population _In couple_ and _Alone_ 
 
